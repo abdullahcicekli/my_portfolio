@@ -1,14 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.module.scss';
+import BaseLayout from "./components/BaseLayout";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Abdullah</h1>
-      <h2>Çiçekli</h2>
-       
-    </div>
-  );
+   return (
+      <div>
+         <BrowserRouter>
+            <BaseLayout/>
+         </BrowserRouter>
+      </div>
+   );
 }
+
 
 export default App;
